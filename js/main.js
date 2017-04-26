@@ -8,15 +8,15 @@ $(function() {
             bottom: 10,
             left: 10
         },
-            width = 960,
-            height = 500,
+            width = 1200,
+            height = 680,
             drawWidth = width - margin.left - margin.right,
             drawHeight = height - margin.top - margin.bottom,
             scaleWeight = false, // Whether to scale by weight or height, dictated by buttons, false at first
             scaleHeight = false; 
     
         // Create wrapper div for chart
-        var div = d3.select("#viz")
+        var div = d3.select("#vis")
             .append("div")
             .attr('height', height)
             .attr('width', width)
@@ -72,11 +72,11 @@ $(function() {
             treemap(root)
 
             // Bind, enter, update, and delete data
-            var nodes = div.data(root.leaves())
+            var nodes = div.selectAll(".node").data(root.leaves())
             nodes.enter() // NEED TO ADD HOVER TO MAKE THEIR TEXT
                 .append("div")
                 .merge(nodes)
-                .attr("class", "node")
+                .attr("class", function(d){return d.data.type_name + " node"})
                 .transition().duration(1500)
                 .style("left", function(d, i) {
                     return d.x0 + "px";
@@ -93,6 +93,10 @@ $(function() {
                 .style("background", function(d, i) {
                     return colorScale(d.data.type_name);
                 });
+
+            nodes.exit()
+                .transition().duration(1500)
+                .remove()
         }
         // First draw on load
         draw();
@@ -100,7 +104,14 @@ $(function() {
         // On change event which redraws elements
         $("input").on("change", function() {
             // Changes colorscale if needed, sets if height/weight scaling are required
-
+            if($(this).val() == "height") { // Sets height to opposite if button toggled
+                scaleHeight = !scaleHeight
+            } else if ($(this).val() == "weight"){ // Sets weight to opposite if button toggled
+                scaleWeight = !scaleWeight
+            } else { // Toggles visibility of given type UNFINISHED
+                var currentType = $(this).val()
+                $(currentType).toggle();
+            }
             // Draw again
             draw();
         })

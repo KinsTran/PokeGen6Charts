@@ -13,74 +13,120 @@
 
     <!-- Custom files -->
     <link rel="stylesheet" href="css/main.css" />
-
-    <!-- your script file -->
-    <script src="js/main.js"></script>
 </head>
 
 <body class ="container">
     <h1>Pokemon Visualizations</h1>
-        <!-- Create a button for every Pokemon type -->
-        <div class="button-group" data-toggle="buttons">
-            <label class="btn btn-primary active" id="normal">
-				<input value="normal" type="checkbox" name="options" id="option1" autocomplete="off" checked>Normal
-			</label>
-            <label class="btn btn-primary active" id="fighting">
-				<input value="fighting" type="checkbox" name="options" id="option2" autocomplete="off" checked >Fighting
-			</label>
-            <label class="btn btn-primary active" id="flying">
-				<input value="flying" type="checkbox" name="options" id="option2" autocomplete="off" checked>Flying
-			</label>
-            <label class="btn btn-primary active" id="poison">
-				<input value="poison" type="checkbox" name="options" id="option2" autocomplete="off" checked>Poison
-			</label>
-            <label class="btn btn-primary active" id="ground">
-				<input value="ground" type="checkbox" name="options" id="option2" autocomplete="off" checked>Ground
-			</label>
-            <label class="btn btn-primary active" id="rock">
-				<input value="rock" type="checkbox" name="options" id="option2" autocomplete="off" checked>Rock
-			</label>
-            <label class="btn btn-primary active" id="bug">
-				<input value="bug" type="checkbox" name="options" id="option2" autocomplete="off" checked>Bug
-			</label>
-            <label class="btn btn-primary active" id="ghost">
-				<input value="ghost" type="checkbox" name="options" id="option2" autocomplete="off" checked>Ghost
-			</label>
-            <label class="btn btn-primary active" id="steel">
-				<input value="steel" type="checkbox" name="options" id="option2" autocomplete="off" checked>Steel
-			</label>
-            </br>
-            <label class="btn btn-primary active" id="fire">
-				<input value="fire" type="checkbox" name="options" id="option2" autocomplete="off" checked>Fire
-			</label>
-            <label class="btn btn-primary active" id="water">
-				<input value="water" type="checkbox" name="options" id="option2" autocomplete="off" checked>Water
-			</label>
-            <label class="btn btn-primary active" id="grass">
-				<input value="grass" type="checkbox" name="options" id="option2" autocomplete="off" checked>Grass
-			</label>
-            <label class="btn btn-primary active" id="electric">
-				<input value="electric" type="checkbox" name="options" id="option2" autocomplete="off" checked>Electric
-			</label>
-            <label class="btn btn-primary active" id="psychic">
-				<input value="psychic" type="checkbox" name="options" id="option2" autocomplete="off" checked>Psychic
-			</label>
-            <label class="btn btn-primary active" id="ice">
-				<input value="ice" type="checkbox" name="options" id="option2" autocomplete="off" checked>Ice
-			</label>
-            <label class="btn btn-primary active" id="dragon">
-				<input value="dragon" type="checkbox" name="options" id="option2" autocomplete="off" checked>Dragon
-			</label>
-            <label class="btn btn-primary active" id="dark">
-				<input value="dark" type="checkbox" name="options" id="option2" autocomplete="off" checked>Dark
-			</label>
-            <label class="btn btn-primary active" id="fairy">
-				<input value="fairy" type="checkbox" name="options" id="option2" autocomplete="off" checked>Fairy
-			</label>
-            
-        </div>
+    <!-- Create a button for every Pokemon type -->
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active" id="normal">
+            <input value=".normal" type="checkbox" name="options" id="option1" autocomplete="off" checked>Normal
+        </label>
+        <label class="btn btn-primary active" id="fighting">
+            <input value=".fighting" type="checkbox" name="options" id="option2" autocomplete="off" checked >Fighting
+        </label>
+        <label class="btn btn-primary active" id="flying">
+            <input value=".flying" type="checkbox" name="options" id="option2" autocomplete="off" checked>Flying
+        </label>
+        <label class="btn btn-primary active" id="poison">
+            <input value=".poison" type="checkbox" name="options" id="option2" autocomplete="off" checked>Poison
+        </label>
+        <label class="btn btn-primary active" id="ground">
+            <input value=".ground" type="checkbox" name="options" id="option2" autocomplete="off" checked>Ground
+        </label>
+        <label class="btn btn-primary active" id="rock">
+            <input value=".rock" type="checkbox" name="options" id="option2" autocomplete="off" checked>Rock
+        </label>
+        <label class="btn btn-primary active" id="bug">
+            <input value=".bug" type="checkbox" name="options" id="option2" autocomplete="off" checked>Bug
+        </label>
+        <label class="btn btn-primary active" id="ghost">
+            <input value=".ghost" type="checkbox" name="options" id="option2" autocomplete="off" checked>Ghost
+        </label>
+        <label class="btn btn-primary active" id="steel">
+            <input value=".steel" type="checkbox" name="options" id="option2" autocomplete="off" checked>Steel
+        </label>
+    </div>
 
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input value="height" type="checkbox" name="options" id="option2" autocomplete="off">Height
+        </label>
+    </div>
+
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active" id="fire">
+            <input value=".fire" type="checkbox" name="options" id="option2" autocomplete="off" checked>Fire
+        </label>
+        <label class="btn btn-primary active" id="water">
+            <input value=".water" type="checkbox" name="options" id="option2" autocomplete="off" checked>Water
+        </label>
+        <label class="btn btn-primary active" id="grass">
+            <input value=".grass" type="checkbox" name="options" id="option2" autocomplete="off" checked>Grass
+        </label>
+        <label class="btn btn-primary active" id="electric">
+            <input value=".electric" type="checkbox" name="options" id="option2" autocomplete="off" checked>Electric
+        </label>
+        <label class="btn btn-primary active" id="psychic">
+            <input value=".psychic" type="checkbox" name="options" id="option2" autocomplete="off" checked>Psychic
+        </label>
+        <label class="btn btn-primary active" id="ice">
+            <input value=".ice" type="checkbox" name="options" id="option2" autocomplete="off" checked>Ice
+        </label>
+        <label class="btn btn-primary active" id="dragon">
+            <input value=".dragon" type="checkbox" name="options" id="option2" autocomplete="off" checked>Dragon
+        </label>
+        <label class="btn btn-primary active" id="dark">
+            <input value=".dark" type="checkbox" name="options" id="option2" autocomplete="off" checked>Dark
+        </label>
+        <label class="btn btn-primary active" id="fairy">
+            <input value=".fairy" type="checkbox" name="options" id="option2" autocomplete="off" checked>Fairy
+        </label>
+    </div>
+
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input value="weight" type="checkbox" name="options" id="option2" autocomplete="off">Weight
+        </label>
+    </div>
 
     <div id="vis"></div>
+
+    <p>
+        I chose to create this chart as a treemap, much like we had in class.
+        At first, I had intended to create a chart which organized Pokemon by type and generation, but I realized that's been done many times already.
+        As a result, I looked through my dataset, and realized that height and weight data were provided, so I decided to create a chart detailing those with types instead.
+        My first consideration for a chart type was a divided bar chart, but I decided against that because there are so many Pokemon, it would likely get to the point where it is almost impossible to distinguish any of the individual Pokemon's areas.
+        I then considered the treemap, since it used the whole of its charting area, which would allow easier seeing and mousing over of different individual elements. This is also why I have expanded the chart out as far as reasonably possible without stretching off of the screen.
+        The encodings used include area, both for the individual Pokemon and their type as a whole, and color to distinguish between different types, and to make the different areas clear.
+        There is also the length of the elements, which help contribute to the area and are another way to compare them. Positions along any kind of scale is always good, however because of the nature of the treemap, adding axes with scales would be merely misleading, since the 
+        organization of the treemap would then matter. For instance, a type area that begins at "5" might be miscompared to one that begins at "0". A smaller concern is that the units of measurement would be constantly changing due to the nature of the visualization, and so having axes 
+        to measure by might just cause confusion. On a side note, any Pokemon with two types is in the visualization twice, since they represent both.
+    </p>
+
+    <p>
+        Types: When used alone, the type boxes allow for a user to see how their favorite Pokemon type compares to others in terms of how widespread it is. By default, all the Pokemon types are rendered at the same time,
+        however the toggles allow the viewer to compare only the types they want to compare. For instance, their two favorite types against each other, or the three starting types of grass, fire, and water. For instance, while I knew Water was easily the most prevalent type, 
+        I learned from this chart just how few Ice and Ghost types there are, which is a shame because I really like the Ghost type. The buttons you may notice 
+        are colored the same type as the respective type they are representing. This is to help with the usage of color as an encoding, and to help distinguish between the types which have similar colors, such as the Fairy and Psychic types.
+    </p>
+
+    <p>
+        Height: The height option allows the toggling of whether to scale the boxes by their height. The ability to scale by height, in combination with the ability to toggle types, allows the comparison of sizes among Pokemon.
+        This is useful to answer questions such as, which type has the tallest Pokemon on average, which have the smallest, and which have the largest and smallest Pokemon of all. 
+        When viewing type without any types toggled, I was surprised at how little most of the boxes changed, only shrinking or growing a bit in size, with the exception of the Dragon-type area, which grows a massive amount. I suppose Dragons being gigantic shouldn't be too big of a surprise,
+        but I didn't imagine that it would make up for their lack of numbers so well.
+    </p>
+
+    <p>
+        Weight: The weight option allows the toggling of whether to scale the boxes by their weight. The ability to scale by weight allows the user to see which type has the heaviest or lightest Pokemon. This tool brought the most surprises to me,
+        as I had thought that Rock would easily top the charts. Instead, it is beaten out by Steel (I suppose), Dragon (See the height paragraph), Water(There's a lot of them), and Ground(The most surprising to me, but I guess the whole of Earth is heavier than some rocks). 
+        I'd fully expected Fairies to be the lightest as well, but Electric-types give them a run for their money in that category. You may have noticed that there is the option to toggle weight and height on at the same time. Since they are not the same unit, it doesn't make much sense, but I thought it would be fun
+        to see both of the contents be emphasized and see who came out on top. Dragon manages through sheer force of their huge numbers manage to compete with the more prolific Water and Ground types in this category.
+    </p>
 </body>
+
+<!-- script file, loaded in after everything else -->
+<script src="js/main.js"></script>
+
 </html>

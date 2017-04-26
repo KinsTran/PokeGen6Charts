@@ -19,8 +19,18 @@
   color:white;
 }
 
+#vis {
+  position:relative;
+  padding-bottom:100px;
+  margin-bottom:580px;
+}
+
 .btn {
   color: black;
+}
+
+.btn-group {
+  margin-bottom:20px;
 }
 
 #normal {
@@ -93,9 +103,4 @@
 
 #fairy {
   background-color: #EE99AC;
-}
-
-#vis {
-  position:relative;
-  padding-bottom:100px;
 }
