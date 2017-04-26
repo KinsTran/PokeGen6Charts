@@ -3,4 +3,4 @@ Charts depicting the spread of Pokemon types (up to generation 6), and their pro
 
 Data sourced (prior edits in R) from: https://github.com/veekun/pokedex/tree/master/pokedex/data/csv  
 
-**Link:** https://KinsTran-s17.github.io/PokeGen6Charts/
+**Link:** https://KinsTran.github.io/PokeGen6Charts/
